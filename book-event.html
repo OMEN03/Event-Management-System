@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Event - Event Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Event Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="logoutLink">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="book-event-form">
+                <h2>Book an Event</h2>
+                <form id="bookEventForm">
+                    <!-- Selected event type will be inserted here by JavaScript -->
+                    <div class="form-group">
+                        <label for="eventName">Event Name:</label>
+                        <input type="text" id="eventName" name="eventName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate">Event Date:</label>
+                        <input type="date" id="eventDate" name="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventTime">Event Time:</label>
+                        <input type="time" id="eventTime" name="eventTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="attendees">Number of Attendees:</label>
+                        <input type="number" id="attendees" name="attendees" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDescription">Event Description:</label>
+                        <textarea id="eventDescription" name="eventDescription" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book Event</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Event Management System. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
